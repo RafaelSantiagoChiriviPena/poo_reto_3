@@ -133,6 +133,7 @@ if __name__ == "__main__":
 Para este punto, lo mas complejo fue pensar en la tematica y los platos del restaurante, sin embargo, con la recomendacion y creatividad de mi mejor amiga surgio la idea de hacer un restaurante de tematica asiatica. Una vez definida la tematica y los platos, me costo definir que diferenciaria a los tipos de platos entre si, siendo que la primera caracteristica que surgio fueron los cubiertos con que se comen los platos, partiendo de esta idea, fue mas facil darle algo unico que distinguiera cada subclase de los tipos de plato.
 Al final, la orden fue algo facil de definir, y aunque tuve algunos problemas para definir el agregado de platos, costo una busqueda para facilitar el metodo, para al final definir algunos ejemplos y poner a prueba los descuentos establecidos
 El menu desarrollado fue el siguiente
+
 <strong> Entradas: </strong>
 1. Takoyaki (buñuelos japoneses)
 2. Tteokbokki (pastel de arroz)
