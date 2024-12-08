@@ -10,6 +10,8 @@
 
 ### A continuacion, se muestran las soluciones propuestas a los distintos puntos de este reto
 1. Create a repo with the class exercise
+El ejercicio era un buen punto de inicio para el tema de composicion, puesto que en clases anteriores ya habiamos definido la clase Point, y aunque al principio me costo entender la definicion de las clases partiendo de que sus instancias serian objetos de otras clases, una vez que lo entendi resulto facil simplemente operar los componentes de los puntos de inicio y final para determinar la longitud y la pendiente de la linea. para el corte con los ejes, afortunadamente recorde el teorema de bolzano del curso de calculo diferencial, haciendo mas facil el entendimiento del punto.
+Por ultimo para discretizar la linea, me costo algunos intentos lograr correctamente la generacion de los puntos, pero luego de entender como obtener el incremento de las coordenadas, resulto facil.
 ```python
 from math import atan2
 from math import degrees
@@ -127,6 +129,25 @@ if __name__ == "__main__":
 - Define a base class MenuItem: This class should have attributes like name, price, and a method to calculate the total price.
 - Create subclasses for different types of menu items: Inherit from MenuItem and define properties specific to each type (e.g., Beverage, Appetizer, MainCourse).
 - Define an Order class: This class should have a list of MenuItem objects and methods to add items, calculate the total bill amount, and potentially apply specific discounts based on the order composition.
+Para este punto, lo mas complejo fue pensar en la tematica y los platos del restaurante, sin embargo, con la recomendacion y creatividad de mi mejor amiga surgio la idea de hacer un restaurante de tematica asiatica. Una vez definida la tematica y los platos, me costo definir que diferenciaria a los tipos de platos entre si, siendo que la primera caracteristica que surgio fueron los cubiertos con que se comen los platos, partiendo de esta idea, fue mas facil darle algo unico que distinguiera cada subclase de los tipos de plato.
+Al final, la orden fue algo facil de definir, y aunque tuve algunos problemas para definir el agregado de platos, costo una busqueda para facilitar el metodo, para al final definir algunos ejemplos y poner a prueba los descuentos establecidos
+El menu desarrollado fue el siguiente
+**Entradas:**
+1. Takoyaki (buñuelos japoneses)
+2. Tteokbokki (pastel de arroz)
+3. Mandu (empanadilla coreana)
+**Platos fuertes:**
+1. Corte se wagyu (vaca japonesa)
+2. Curry tradicional 
+3. Ramen (fideos japoneses)
+**Bebidas:**
+1. sake (alcohol)
+2. Jiuniang (vino de arroz fermentado)
+3. te con leche y tapioca (te de burbujas)
+**Postre:**
+1. Wagashi (dulce japones parecido al mochi)
+2. Yuèbǐng (pastel de Luna chino)
+3. Tanghulu (frutas frescas cubiertas de caramelo).
 ```python
 class MenuItem:
     """Definicion estandar para un item del menu"""
