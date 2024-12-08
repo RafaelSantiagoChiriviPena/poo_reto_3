@@ -9,7 +9,7 @@
 </p></details><br>
 
 ### A continuacion, se muestran las soluciones propuestas a los distintos puntos de este reto
-##1. Create a repo with the class exercise
+## 1. Create a repo with the class exercise
 El ejercicio era un buen punto de inicio para el tema de composicion, puesto que en clases anteriores ya habiamos definido la clase Point, y aunque al principio me costo entender la definicion de las clases partiendo de que sus instancias serian objetos de otras clases, una vez que lo entendi resulto facil simplemente operar los componentes de los puntos de inicio y final para determinar la longitud y la pendiente de la linea. para el corte con los ejes, afortunadamente recorde el teorema de bolzano del curso de calculo diferencial, haciendo mas facil el entendimiento del punto.
 Por ultimo para discretizar la linea, me costo algunos intentos lograr correctamente la generacion de los puntos, pero luego de entender como obtener el incremento de las coordenadas, resulto facil.
 ```python
@@ -125,7 +125,7 @@ if __name__ == "__main__":
         print(f"p{i}= {arreglo[i]}")
 ```
 
-2. Restaurant scenario: You want to design a program to calculate the bill for a customer's order in a restaurant.
+## 2. Restaurant scenario: You want to design a program to calculate the bill for a customer's order in a restaurant.
 - Define a base class MenuItem: This class should have attributes like name, price, and a method to calculate the total price.
 - Create subclasses for different types of menu items: Inherit from MenuItem and define properties specific to each type (e.g., Beverage, Appetizer, MainCourse).
 - Define an Order class: This class should have a list of MenuItem objects and methods to add items, calculate the total bill amount, and potentially apply specific discounts based on the order composition.
